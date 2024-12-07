@@ -15,7 +15,6 @@ public class Attendance extends javax.swing.JFrame {
         AttendanceTable = new javax.swing.JTable();
         jLabel27 = new javax.swing.JLabel();
         txtEmployeeId = new javax.swing.JTextField();
-        btnUpdate = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -81,18 +80,6 @@ public class Attendance extends javax.swing.JFrame {
         jPanel1.add(txtEmployeeId);
         txtEmployeeId.setBounds(200, 70, 170, 30);
 
-        btnUpdate.setBackground(new java.awt.Color(0, 0, 204));
-        btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(255, 255, 0));
-        btnUpdate.setText("Update");
-        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnUpdate);
-        btnUpdate.setBounds(520, 70, 100, 32);
-
         btnView.setBackground(new java.awt.Color(0, 0, 204));
         btnView.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnView.setForeground(new java.awt.Color(255, 255, 0));
@@ -106,13 +93,15 @@ public class Attendance extends javax.swing.JFrame {
         btnView.setBounds(400, 70, 80, 32);
 
         jPanel4.setBackground(new java.awt.Color(0, 102, 204));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 40, -1, -1));
+        jPanel4.setLayout(null);
+        jPanel4.add(jLabel2);
+        jLabel2.setBounds(23, 40, 0, 0);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText(" Attendance");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 130, 40));
+        jPanel4.add(jLabel7);
+        jLabel7.setBounds(30, 10, 130, 40);
 
         jPanel1.add(jPanel4);
         jPanel4.setBounds(0, 0, 890, 50);
@@ -121,9 +110,7 @@ public class Attendance extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 6, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 864, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 876, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,11 +127,6 @@ public class Attendance extends javax.swing.JFrame {
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
       
     }//GEN-LAST:event_btnViewActionPerformed
-
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,7 +168,6 @@ public class Attendance extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable AttendanceTable;
-    private javax.swing.JButton btnUpdate;
     private javax.swing.JButton btnView;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel27;
